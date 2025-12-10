@@ -154,6 +154,7 @@
         display: none;
     }
 
+
     .notes-page {
         width: 100vw;
         height: 100vh;
@@ -172,6 +173,10 @@
     .new-notes-form {
     height: 25vh;
     }
+    .new-notes-form .new-notes .notes-input .message-box{
+        min-height: 130px;
+    }
+
     #back-arrow {
         display: block;
     }
