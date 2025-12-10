@@ -1,0 +1,227 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+}
+
+.form h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
+}
+
+.color-panels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-panels button {
+    cursor: pointer;
+}
+
+#group-panel {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+#group-panel p {
+    font-weight: 500;
+    font-size: 19px;
+    width: max-content;
+}
+
+#group-panel input {
+    border-radius: 22px;
+    border: 1px solid #CCCCCC;
+    font-size: 15px;
+    width: 320px;
+    height: 40px;
+    padding-inline: 20px;
+}
+
+#panel-label {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#first-color {
+    background-color: rgb(179, 139, 250);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+}
+
+#second-color {
+    background-color: violet;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+}
+
+#third-color {
+    background-color: rgb(67, 230, 252);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#fourth-color {
+    background-color: rgb(241, 149, 118);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#fifth-color {
+    background-color: rgb(0, 71, 255);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+}
+
+#sixth-color {
+    background-color: rgb(102, 145, 255);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+}
+
+.create-btn-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#create-btn {
+    padding: 3px;
+    width: 100px;
+    background-color: #16008B;
+    color: white;
+    border-radius: 6px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 6px;
+    padding: 40px;
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.2);
+    width: 520px;
+    height: 235px;
+    text-align: left;
+}
+
+@media(max-width:480px) {
+    .form-container {
+        width: 320px;
+        height: 220px;
+        display: flex;
+        padding: 30px;
+    }
+
+    .form {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .labels {
+        width: 100%;
+        gap: 18px;
+    }
+
+    #group-panel {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: bold;
+        gap: 10px;
+    }
+
+    #group-panel p {
+        font-weight: 500;
+        font-size: 16px;
+        width: max-content;
+        white-space: nowrap;
+    }
+
+    #group-panel input {
+        min-width: 180px;
+        height: 30px;
+        padding-inline: 10px;
+        border-radius: 22px;
+    }
+
+    #panel-label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .color-panels {
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+
+    #first-color,
+    #second-color,
+    #third-color,
+    #fourth-color,
+    #fifth-color,
+    #sixth-color {
+        width: 20px;
+        height: 20px;
+    }
+
+    .create-btn-div {
+        align-self: center;
+    }
+
+    #create-btn {
+        width: 200px;
+        height: 30px;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+}

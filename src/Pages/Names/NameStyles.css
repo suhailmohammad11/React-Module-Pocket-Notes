@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.names-page {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 40px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.pocket-notes-title {
+    padding-top: 50px;
+    padding-left: 75px;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.groups-panel {
+    overflow-y: auto;
+}
+
+.groups-panel .group-details:hover {
+    background-color: rgba(0, 0, 0, 0.079);
+    border-radius: 16px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-right: 7px;
+    z-index: 10;
+}
+
+.add-btn {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+}
+.groups-panel .group-details .group-icon {
+    flex-shrink: 0;
+}
+
+/* mobile and phones */
+@media(max-width:640px) {
+    .groups-panel .group-details p {
+        font-size: 20px;
+    }
+}
+
+/* Tablets , laptops */
+@media (min-width:641px) and (max-width: 1140px) {
+    .pocket-notes-title {
+    padding-top: 35px;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+    .groups-panel .group-details .group-icon{
+        width:45px;
+        height:45px;
+    }
+        .groups-panel .group-details p {
+        font-size: 17px;
+    }
+}
